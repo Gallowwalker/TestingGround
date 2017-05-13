@@ -1,1 +1,2 @@
-# TestingGround is web application for testing student skills.
+# TestingGround
+is web application for testing student skills.
