@@ -1,0 +1,15 @@
+ <script type="text/javascript">
+ function checkform ( form )
+ {
+ 
+	 if (form.accountname.value == "") { alert( "You did not fill in your account name. Please try again." ); form.accountname.focus(); return false; } else { if (form.accountname.value.length < 3) { alert( "Az account neved túl rövid!" ); form.accountname.focus(); return false; } }
+	 if (form.password.value == "") { alert( "You did not fill in a password. Please try again." ); form.password.focus(); return false; } else { if (form.password.value.length < 6) { alert( "A jelszavad túl rövid!" ); form.password.focus(); return false; } }
+	 if (form.password2.value == "") { alert( "You did not fill in a password. Please try again." ); form.password2.focus(); return false; }
+	 if (form.password.value == form.accountname.value) { alert( "The passwords do not patch. Please try again." ); form.password.focus(); return false; }
+	 if (form.password.value != form.password2.value) { alert( "The passwords do not match. Please try again." ); form.password.focus(); return false; }
+	 if (form.email.value == "") { alert( "You did not fill in your e-mail address. Please try again." ); form.email.focus(); return false; } else { if (form.email.value.length < 8) { alert( "Az email címed túl rövid!" ); form.email.focus(); return false; } }
+	 if (form.secret_question.value == "") { alert( "You did not fill in the secret_question. Please try again." ); form.secret_question.focus(); return false; }
+     if (form.secret_answer.value == "") { alert( "You did not fill in the secret_answer. Please try again." ); form.secret_answerwwww.focus(); return false; }
+ return true ;
+ }
+ </script>
